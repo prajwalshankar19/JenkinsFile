@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Docker') {
+      steps {
+        powershell 'docker --version'
+      }
+    }
+
   }
 }
